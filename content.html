@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <title>Content page</title>
+  <link rel='stylesheet' href='css/global-style.css' />
+  <link rel='stylesheet' href='css/content-style.css' />
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="FAQ/faq.html">FAQ</a></li>
+        <li><a href="content.html">Content</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+
+    <div class="projects">
+      <div id="home" onclick="goHome()">
+        <h1>My projects</h1>
+        <script>
+          function goHome() {
+            const button = document.getElementById("home");
+            button.onclick = window.location.href = "index.html";
+          }
+        </script>
+      </div>
+      <p><em> Most of my projects are available on my GitHub page
+          <a href="https://github.com/mlouward" target="_blank" rel="noopener noreferrer">
+            <img height="32px" src="images/GitHub-Mark-120px-plus.png" alt="github page link">
+          </a>
+        </em>
+      </p>
+
+      <h3>Personal projects</h3>
+      <ul>
+        <div class="finished">
+          <li><a href="https://github.com/mlouward/Fun/tree/master/Image%20Processing" target="_blank"
+              rel="noopener noreferrer">Image Processing</a> in Python, to get familiar with numpy/matplotlib (Sobel and
+            gaussian filter)</li>
+        </div>
+        <div class="ongoing">
+          <li><a href="https://github.com/mlouward/Fun/tree/master/ML" target="_blank" rel="noopener noreferrer">
+              Advanced Machine Learning</a> exercises from <a href="https://weifoo.gitbooks.io/noml/content/"
+              target="_blank" rel="noopener noreferrer">this site</a></li>
+          <li><a href="https://github.com/mlouward/Fun/tree/master/Problems" target="_blank" rel="noopener noreferrer">
+              Programming exercises</a> from different websites and online books(<a href="https://exercism.io"
+              target="_blank" rel="noopener noreferrer">Exercism.io</a>, <a href="https://hackerrank.com"
+              target="_blank" rel="noopener noreferrer">HackerRank</a>, <a
+              href="https://upload.wikimedia.org/wikipedia/commons/a/aa/Write_Yourself_a_Scheme_in_48_Hours.pdf"
+              target="_blank" rel="noopener noreferrer">Haskell book</a>, ...) using multiple languages (Haskell, JS/TS,
+            C#,
+            Python)</li>
+          <li>VERY long term <a href="https://github.com/mlouward/Fun/tree/master/UnoCompetitif" target="_blank"
+              rel="noopener noreferrer">game project</a>, make a multiplayer UNO clone with custom rules using Unity
+            (game
+            engine) and C# (language).</li>
+        </div>
+      </ul>
+
+
+      <h3>School projects</h3>
+      <ul>
+        <div class="ongoing">
+          <li><a href="https://www.thesis.press" target="_blank" rel="noopener noreferrer">4<sup>th</sup> year
+              project:</a> Create a french corpus of summarized texts and fine-tune a deep learning model for
+            summarization on it.
+          </li>
+        </div>
+        <div class="finished">
+          <li><a href="https://github.com/mlouward/ADSA-Project" target="_blank" rel="noopener noreferrer">Data
+              Structure</a> project on graph theory and algorithms (AVL tree, DFS, Hamiltonian path, Floyd-Warshall...)
+          </li>
+          <li><a href="https://github.com/mlouward/DM-Startup-Cooking" target="_blank" rel="noopener noreferrer">WPF/C#
+              application</a> to order food, using a database to store information and manage the stock</li>
+          <li><a href="https://github.com/mlouward/DHCP-DNS-Server" target="_blank" rel="noopener noreferrer">Network
+              Project</a> using python sockets and SQLite to create a logs server for DHCP/DNS requests</li>
+        </div>
+      </ul>
+    </div>
+
+  </div>
+</body>
