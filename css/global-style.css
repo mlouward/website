@@ -10,7 +10,7 @@ h1 {
   text-align: center;
   background: #1abc9c;
   color: white;
-  font-size: x-large;
+  font-size: min(x-large, 34px);
   font-family: 'Courier New', Courier, monospace;
   margin: 0px;
 }
@@ -54,7 +54,14 @@ img {
   max-width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 960px) {
+  body{
+    width: 60em;
+  }
+  h1{
+    margin: 25px 0px;
+  }
+
   .navbar li {
     float: left;
   }
@@ -63,20 +70,11 @@ img {
     padding-top: 24px;
   }
   .navbar ul {
-    list-style-type: none;
-    width: 100%;
-    left: 0%;
-    top: 0%;
-    background-color: #333;
     position: fixed;
     margin: 0px 0px;
-    text-align: center;
   }
   .navbar li a {
-    display: block;
-    color: white;
     text-align: left;
     padding: 14px 22px;
-    text-decoration: none;
   }
 }

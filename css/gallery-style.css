@@ -1,10 +1,12 @@
 img.center {
-  width: 100%;
+  max-width: 100%;
   display: block;
   margin: 0 auto;
 }
 
-body {
-  margin: 0 auto;
-  max-width: 80em;
+@media screen and (min-width: 960px){
+  body {
+    /* Larger width on big viewports to see images better */
+    width: 80em;
+  }
 }
